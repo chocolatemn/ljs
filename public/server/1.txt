@@ -68,3 +68,5 @@ cat ~/.ssh/id_rsa.pub
 //重新生成密钥
 ssh-keygen -t rsa
 
+--
+
