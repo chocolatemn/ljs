@@ -63,6 +63,9 @@ error: failed to push some refs to 'github.com:chocolatemn/ljs.git'
 mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
 $
 
+//推送一个更改
+git push origin master
+
 //查看密钥
 cat ~/.ssh/id_rsa.pub
 //重新生成密钥
