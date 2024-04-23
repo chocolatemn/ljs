@@ -1,0 +1,70 @@
+https://github.com/chocolatemn/ljs.git
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public (master)
+$ mkdir bless
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public (master)
+$ cd bless
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ pwd
+/d/html5/Constol - 2/public/bless
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git init
+Initialized empty Git repository in D:/html5/Constol - 2/public/bless/.git/
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git remote add origin git@github.com:chocolatemn/ljs.git
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git add blessingWall
+fatal: pathspec 'blessingWall' did not match any files
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:chocolatemn/ljs.git'
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git fetch origin
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git pull  origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git pull  origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:chocolatemn/ljs.git'
+
+mana@DESKTOP-C4CTHRB MINGW64 /d/html5/Constol - 2/public/bless (master)
+$
+
+//查看密钥
+cat ~/.ssh/id_rsa.pub
+//重新生成密钥
+ssh-keygen -t rsa
+

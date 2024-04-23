@@ -1,0 +1,2 @@
+目录下启动
+python -m http.server 8000
