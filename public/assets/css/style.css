@@ -3368,4 +3368,31 @@ input, textarea, select {
   float: right;
 }
 
+/* 水平滚动 */
+.scroll-container {
+  /* width: 100%; 容器宽度 */
+  height: 50%;
+  overflow: hidden; /* 隐藏滚动内容超出的部分 */
+  white-space: nowrap; /* 保证内容在一行内显示 */
+}
+.scroll-content {
+  display: inline-block; /* 让内容可以水平滚动 */
+  /* animation: scroll 10s linear infinite; 应用滚动动画 */
+  animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+    /* transform: translateX(100%); */
+  }
+  to {
+    transform: translateX(-25%); /* 根据内容宽度调整 */
+  }
+} 
+
+.hidden {
+  display: none;
+}
+ 
+
 /*# sourceMappingURL=style.css.map */

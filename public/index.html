@@ -17,6 +17,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>莱金丝</title>
+
+    <script>
+    // document.getElementById('myLink').addEventListener('click', function(event) {
+    // // 阻止默认行为
+    // event.preventDefault();
+
+    // // 执行自定义的函数
+    // showMore();
+    // });   
+function showMore() {
+  var hiddenItems = document.getElementById('hidden-items');
+  if (hiddenItems.style.display === 'none') {
+    hiddenItems.style.display = 'block'; // 显示隐藏的项目
+  } else {
+    hiddenItems.style.display = 'none'; // 重新隐藏项目
+  }
+}
+    </script>
 </head>
 
 <body>
@@ -577,13 +595,13 @@
 
 
     <!-- ==========Team Member Section Starts Here========== -->
-    <div class="teamMember teamMember__two padding-tb" id="Team">
+    <div class="teamMember teamMember__two padding-tb" id="Team" >
         <div class="container">
             <div class="section__header text-center">
                 <h6>我们的团队成员</h6>
                 <h2>经验符合团队员工的要求</h2>
             </div>
-            <div class="section__wrapper">
+            <div class="section__wrapper" >
                 <div class="row g-4 justify-content-center">
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="teamMember__item">
@@ -623,15 +641,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12" >
                         <div class="teamMember__item">
                             <div class="teamMember__inner">
                                 <div class="teamMember__thumb">
-                                    <a href="javascript:;"><img src="assets/images/team/03.jpg" alt="teamMember" /></a>
+                                    <a href="javascript:;"><img src="assets/images/team/05.jpg" alt="teamMember" /></a>
                                 </div>
                                 <div class="teamMember__content">
-                                    <h4><a href="javascript:;">Edward Willey</a></h4>
-                                    <span>行政</span>
+                                    <h4><a href="javascript:;">仇志婷</a></h4>
+                                    <span>客户总监</span>
                                     <ul>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
@@ -643,6 +661,25 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="teamMember__item">
+                            <div class="teamMember__inner">
+                                <div class="teamMember__thumb">
+                                    <a href="javascript:;"><img src="assets/images/team/03.jpg" alt="teamMember" /></a>
+                                </div>
+                                <div class="teamMember__content">
+                                    <h4><a href="javascript:;">赵小东</a></h4>
+                                    <span>行政</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 hidden" id="hidden-items"> 
                         <div class="teamMember__item">
                             <div class="teamMember__inner">
                                 <div class="teamMember__thumb">
@@ -663,13 +700,167 @@
                     </div>
                 </div>
                 <div class="text-center infotext">
-                    <p>获得组织最佳顾问的 <a href="Appointment.html">咨询</a></p>
+                    <p>获得组织<a onclick="showMore()" href="#Team" id="myLink">更多</a>最佳顾问的 <a href="Appointment.html" id="myLink">咨询</a></p>
                 </div>
             </div>
         </div>
     </div>
     <!-- ==========Team Member Section Ends Here========== -->
 
+    <!-- ==========Sponsor Section Starts Here========== -->
+    <div class="sponsor">
+        <div class="container">
+            <div class="sponsor__slider overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sponsor__item">
+                            <div class="sponsor__thumb">
+                                <img src="assets/images/sponsor/01.png" alt="sponsor thumb" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sponsor__item">
+                            <div class="sponsor__thumb">
+                                <img src="assets/images/sponsor/02.png" alt="sponsor thumb" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sponsor__item">
+                            <div class="sponsor__thumb">
+                                <img src="assets/images/sponsor/03.png" alt="sponsor thumb" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sponsor__item">
+                            <div class="sponsor__thumb">
+                                <img src="assets/images/sponsor/04.png" alt="sponsor thumb" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sponsor__item">
+                            <div class="sponsor__thumb">
+                                <img src="assets/images/sponsor/05.png" alt="sponsor thumb" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Sponsor Section Ends Here========== -->
+        <!-- ==========Testimonial Section Starts Here========== -->
+        <!-- <div class="testimonial testimonial__two padding-tb bg-img" style="background-image: url(assets/images/bg/02.jpg);" id="testimonial">
+            <div class="container">
+                <div class="section__header text-center">
+                    <h6>我们的好评</h6>
+                    <h2>客户对我们服务的评价</h2>
+                </div>
+                <div class="section__wrapper">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="section__wrapper">
+                                <div class="testimonial__rivew overflow-hidden ps-sm-5">
+                                    <div class="testimonial__slider__two">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                                    <div class="teamMember__item">
+                                                        <div class="teamMember__inner">
+                                                            <div class="teamMember__thumb">
+                                                                <a href="javascript:;"><img src="assets/images/team/01.jpg" alt="teamMember" /></a>
+                                                            </div>
+                                                            <div class="teamMember__content">
+                                                                <h4><a href="javascript:;">吴亮</a></h4>
+                                                                <span>创始人 介绍介绍介绍</span>
+                                                                <ul>
+                                                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                                    <div class="teamMember__item">
+                                                        <div class="teamMember__inner">
+                                                            <div class="teamMember__thumb">
+                                                                <a href="javascript:;"><img src="assets/images/team/02.jpg" alt="teamMember" /></a>
+                                                            </div>
+                                                            <div class="teamMember__content">
+                                                                <h4><a href="javascript:;">马凤</a></h4>
+                                                                <span>运营总监</span>
+                                                                <ul>
+                                                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                                    <div class="teamMember__item">
+                                                        <div class="teamMember__inner">
+                                                            <div class="teamMember__thumb">
+                                                                <a href="javascript:;"><img src="assets/images/team/05.jpg" alt="teamMember" /></a>
+                                                            </div>
+                                                            <div class="teamMember__content">
+                                                                <h4><a href="javascript:;">仇志婷</a></h4>
+                                                                <span>客户总监</span>
+                                                                <ul>
+                                                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                                    <div class="teamMember__item">
+                                                        <div class="teamMember__inner">
+                                                            <div class="teamMember__thumb">
+                                                                <a href="javascript:;"><img src="assets/images/team/03.jpg" alt="teamMember" /></a>
+                                                            </div>
+                                                            <div class="teamMember__content">
+                                                                <h4><a href="javascript:;">赵小东</a></h4>
+                                                                <span>行政</span>
+                                                                <ul>
+                                                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- ==========Testimonial Section Ends Here========== -->
 
     <!-- ==========Testimonial Section Starts Here========== -->
     <div class="testimonial testimonial__two padding-tb bg-img" style="background-image: url(assets/images/bg/02.jpg);" id="testimonial">

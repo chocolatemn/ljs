@@ -17,6 +17,27 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Ljs</title>
+
+    <script>
+        
+// document.getElementById('myLink').addEventListener('click', function(event) {
+//     // 阻止默认行为
+//     event.preventDefault();
+    
+//     // 执行自定义的函数
+//     showMore();
+// });
+        
+        function showMore() {
+          var hiddenItems = document.getElementById('hidden-items');
+          if (hiddenItems.style.display === 'none') {
+            hiddenItems.style.display = 'block'; // 显示隐藏的项目
+          } else {
+            hiddenItems.style.display = 'none'; // 重新隐藏项目
+          }
+          return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -608,10 +629,29 @@
                         <div class="teamMember__item">
                             <div class="teamMember__inner">
                                 <div class="teamMember__thumb">
+                                    <a href="javascript:;"><img src="assets/images/team/05.jpg" alt="teamMember" /></a>
+                                </div>
+                                <div class="teamMember__content">
+                                    <h4><a href="javascript:;">Tiffanny Qiu</a></h4>
+                                    <span>Customer Director</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12" >
+                        <div class="teamMember__item">
+                            <div class="teamMember__inner">
+                                <div class="teamMember__thumb">
                                     <a href="javascript:;"><img src="assets/images/team/03.jpg" alt="teamMember" /></a>
                                 </div>
                                 <div class="teamMember__content">
-                                    <h4><a href="javascript:;">Edward Willey</a></h4>
+                                    <h4><a href="javascript:;">Xiaodong Zhao</a></h4>
                                     <span>Administration</span>
                                     <ul>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -623,7 +663,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12  hidden" id="hidden-items">
                         <div class="teamMember__item">
                             <div class="teamMember__inner">
                                 <div class="teamMember__thumb">
@@ -644,7 +684,7 @@
                     </div>
                 </div>
                 <div class="text-center infotext">
-                    <p>Get the training from organizations best <a href="#">consultant’s</a></p>
+                    <p>Get the training from organizations best <a href="#">consultant’s.</a><a href="#Team" onclick="showMore()" >more</a></p>
                 </div>
             </div>
         </div>

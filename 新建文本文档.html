@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Scroll Example</title>
+<style>
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+ 
+  .scroll-content {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+  }
+ 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200px); /* 假设每个项目宽度为20px, 这里应该是总宽度的负值 */
+    }
+  }
+.scroll-container1{
+  width: 30px; /* 设置一个固定的宽度 */
+  overflow: auto; /* 使div内容可滚动 */
+  white-space: nowrap; /* 确保项目在同一行显示 */
+}
+ 
+.scroll-item {
+  display: inline-block; /* 让项目横向排列 */
+  margin-right: 10px; /* 为项目添加间隔 */
+}
+</style>
+</head>
+<body>
+ 
+<div class="scroll-container">
+  <div class="scroll-content">
+    项目1
+    项目2
+    项目3
+    项目4
+    项目5
+    项目6
+  </div>
+</div>
+ 
+
+<div class="scroll-container1">
+  <div class="scroll-item">项目1</div>
+  <div class="scroll-item">项目2</div>
+  <div class="scroll-item">项目3</div>
+  <div class="scroll-item">项目4</div>
+  <div class="scroll-item">项目5</div>
+</div>
+</body>
+</html>
