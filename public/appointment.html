@@ -328,7 +328,8 @@ function validateEmail() {
                     <div class="callAaction__form">
                         <h2>快速在线咨询</h2>
                         <!-- <form action="http://localhost:3000/submit-message" method="post" id="guestbook-form" onsubmit="return validateEmail()"> -->
-                            <form action="/" method="post" id="guestbook-form" onsubmit="return validateEmail()">
+                            <!-- <form action="/" method="post" id="guestbook-form" onsubmit="return validateEmail()"> -->
+                            <form action="mailto:3640001@qq.com" enctype="text/plain" method="post" id="guestbook-form" onsubmit="return validateEmail()">
 
                             <input type="text" placeholder="您的名字" name="name" id="name" required>
                             <input type="text" placeholder="Email" name="email" id="email" required>
