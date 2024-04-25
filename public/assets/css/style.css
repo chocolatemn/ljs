@@ -3368,31 +3368,39 @@ input, textarea, select {
   float: right;
 }
 
-/* 水平滚动 */
-.scroll-container {
-  /* width: 100%; 容器宽度 */
-  height: 50%;
-  overflow: hidden; /* 隐藏滚动内容超出的部分 */
-  white-space: nowrap; /* 保证内容在一行内显示 */
-}
-.scroll-content {
-  display: inline-block; /* 让内容可以水平滚动 */
-  /* animation: scroll 10s linear infinite; 应用滚动动画 */
-  animation: scroll-left 10s linear infinite;
-}
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-    /* transform: translateX(100%); */
-  }
-  to {
-    transform: translateX(-25%); /* 根据内容宽度调整 */
-  }
-} 
+
+
 
 .hidden {
   display: none;
 }
+
+.container2 {
+  white-space: nowrap;/* 确保文本在一行内显示，不换行 */
+  width: 100%; /* 可以设置固定宽度或者百分比 */
+  height: 250px;
+  animation: scroll 10s linear infinite; /* 应用滚动动画 */
+}
+.container1 {
+  width: 100%; /* 可以设置固定宽度或者百分比 */
+  height: 280px;
+  overflow: hidden;  /*隐藏超出容器的内容 */
+}
  
+.box {
+  display: inline-block; /* 或者使用 display: inline; 只在一行依次显示*/
+  /* margin-right: 10px; /* 可选，为了在盒子之间添加间隔 */
+  /* padding: 10px; 可选，添加内边距 */
+  /* border: 1px solid #000; 可选，添加边框 */ 
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0); /* 动画起始位置，从右边进入 */
+  }
+  to {
+    transform: translateX(-100%); /* 动画结束位置，移动到左边离开视图 */
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
