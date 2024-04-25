@@ -3399,7 +3399,7 @@ input, textarea, select {
     transform: translateX(0); /* 动画起始位置，从开始位置进入;从左边100%边进入 */
   }
   to {
-    transform: translateX(-127%); /* 动画结束位置，移动到左边离开视图 */
+    transform: translateX(-508%); /* 动画结束位置，移动到左边离开视图 */
   }
 }
 
