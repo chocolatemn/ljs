@@ -3379,7 +3379,7 @@ input, textarea, select {
   white-space: nowrap;/* 确保文本在一行内显示，不换行 */
   width: 100%; /* 可以设置固定宽度或者百分比 */
   /* height: 250px; */
-  animation: scroll 10s linear infinite; /* 应用滚动动画 */
+  animation: scroll 25s linear infinite; /* 应用滚动动画 */
 }
 .container1 {
   width: 100%; /* 可以设置固定宽度或者百分比 */
@@ -3396,10 +3396,10 @@ input, textarea, select {
 
 @keyframes scroll {
   from {
-    transform: translateX(0); /* 动画起始位置，从右边进入 */
+    transform: translateX(0); /* 动画起始位置，从开始位置进入;从左边100%边进入 */
   }
   to {
-    transform: translateX(-100%); /* 动画结束位置，移动到左边离开视图 */
+    transform: translateX(-127%); /* 动画结束位置，移动到左边离开视图 */
   }
 }
 
