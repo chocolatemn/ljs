@@ -3405,6 +3405,11 @@ cubic-bezier(n, n, n, n): 允许您定义自己的时间曲线，通过控制立
   /* height: 280px; */
   overflow: hidden;  /*隐藏超出容器的内容 */
 }
+
+/* 鼠标悬停时暂停动画 */
+.container1:hover .container2 {
+  animation-play-state: paused;
+}
  
 .box {
   display: inline-block; /* 或者使用 display: inline; 只在一行依次显示*/
@@ -3413,16 +3418,19 @@ cubic-bezier(n, n, n, n): 允许您定义自己的时间曲线，通过控制立
   /* border: 1px solid #000; 可选，添加边框 */ 
 }
 
+
 @keyframes scroll {
   /* 动画起始位置，从开始位置进入;从左边100%边进入 */
-  /* from {
+  from {
     transform: translateX(0); 
-  } */
+  } 
   /* 动画结束位置，移动到左边离开视图 */
-  /* to {
+  to {
     transform: translateX(-508%); 
-  } */
-  0% {
+  } 
+
+  /* 间断滚动 */
+  /* 0% {
     transform: translateX(0);
     animation-play-state: paused;
   }
@@ -3465,7 +3473,7 @@ cubic-bezier(n, n, n, n): 允许您定义自己的时间曲线，通过控制立
   100% {
     transform: translateX(-508%);
     animation-play-state: paused;
-  } 
+  }  */
 
 }
 
