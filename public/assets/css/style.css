@@ -3369,8 +3369,6 @@ input, textarea, select {
 }
 
 
-
-
 .hidden {
   display: none;
 }
@@ -3379,7 +3377,28 @@ input, textarea, select {
   white-space: nowrap;/* 确保文本在一行内显示，不换行 */
   width: 100%; /* 可以设置固定宽度或者百分比 */
   /* height: 250px; */
-  animation: scroll 25s linear infinite; /* 应用滚动动画 */
+  animation: scroll 25s linear infinite; /*应用滚动动画 线性*/
+  /* animation-play-state: paused; 默认暂停动画 */
+  /* animation: scroll 1s step-end; */
+
+  /* ease: 动画以低速开始，然后加速，然后是缓慢的减速结束。
+
+linear: 动画以相同的速度开始和结束。
+
+ease-in: 动画以低速开始。
+
+ease-out: 动画以低速结束。
+
+ease-in-out: 动画以低速开始和结束。
+
+step-start: 动画分成几步，每一步结束时发生一帧。
+
+step-end: 动画分成几步，每一步结束时发生一帧，与step-start不同的是，它在每一步的开始时发生一帧。
+
+cubic-bezier(n, n, n, n): 允许您定义自己的时间曲线，通过控制立方贝塞尔曲线的四个点。 */
+}
+.active-container2 {
+  animation-play-state: running; /* 激活动画 */
 }
 .container1 {
   width: 100%; /* 可以设置固定宽度或者百分比 */
@@ -3395,12 +3414,59 @@ input, textarea, select {
 }
 
 @keyframes scroll {
-  from {
-    transform: translateX(0); /* 动画起始位置，从开始位置进入;从左边100%边进入 */
+  /* 动画起始位置，从开始位置进入;从左边100%边进入 */
+  /* from {
+    transform: translateX(0); 
+  } */
+  /* 动画结束位置，移动到左边离开视图 */
+  /* to {
+    transform: translateX(-508%); 
+  } */
+  0% {
+    transform: translateX(0);
+    animation-play-state: paused;
   }
-  to {
-    transform: translateX(-508%); /* 动画结束位置，移动到左边离开视图 */
+  10% {
+    transform: translateX(0);
+    animation-play-state: paused;
   }
+  20% {
+    transform: translateX(-102.15%);
+    animation-play-state: paused;
+  }
+  30% {
+    transform: translateX(-102.15%);
+    animation-play-state: paused;
+  }
+  40% {
+    transform: translateX(-204%);
+    animation-play-state: paused;
+  }
+  50% {
+    transform: translateX(-204%);
+    animation-play-state: paused;
+  }
+  60% {
+    transform: translateX(-305.5%);
+    animation-play-state: paused;
+  }
+  70% {
+    transform: translateX(-305.5%);
+    animation-play-state: paused;
+  }
+  80% {
+    transform: translateX(-407%);
+    animation-play-state: paused;
+  }
+  90% {
+    transform: translateX(-407%);
+    animation-play-state: paused;
+  }
+  100% {
+    transform: translateX(-508%);
+    animation-play-state: paused;
+  } 
+
 }
 
 /*# sourceMappingURL=style.css.map */
